@@ -1,0 +1,29 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Course Details</title>
+</head>
+<body>
+    <div class="container">
+        <h2 id="courseTitle">Course Title</h2>
+        <p id="courseDescription">Course Description</p>
+        <div>
+            <h3>Comments</h3>
+            <div id="comments"></div>
+        </div>
+        <div>
+            <h3>Add Comment</h3>
+            <input type="text" id="commentText" placeholder="Your comment">
+            <button onclick="addComment()">Submit</button>
+        </div>
+    </div>
+    <button id="likeButton" onclick="toggleLike()">Like</button>
+</div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        loadCourseDetails();
+        checkLikedStatus();
+    </script>
+</body>
+</html>
